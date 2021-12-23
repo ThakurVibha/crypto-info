@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CryptoInfo</string>
+    <string name="info_text">Scroll your \n favourite Crypto</string>
+    <string name="loreum_ipsum">platform for applications.Applications build on it can use smart contracts - computer algorithms which execute themselves when data is supplied to the platform. \n There is no need for any human operators</string>
+</resources>
