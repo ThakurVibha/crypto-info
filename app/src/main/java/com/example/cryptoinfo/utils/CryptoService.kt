@@ -3,8 +3,7 @@ package com.example.cryptoinfo.utils
 import com.example.cryptoinfo.data.cryptodetails.CryptoDeatils
 import com.example.cryptoinfo.data.cryptomarketdetails.CryptoMarketDetails
 import com.example.cryptoinfo.data.cryptonames.CryptoName
-import okhttp3.Interceptor
-import okhttp3.OkHttpClient
+
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -13,6 +12,7 @@ import retrofit2.http.*
 
 var BASE_URL = "https://api.coinpaprika.com/v1/"
 var BASE_URL_NEW="https://pro-api.coinmarketcap.com/v1/"
+var API_KEY="a33fbb95-9591-46b5-899d-cd6815e66d9a"
 
 interface CryptoService {
 

@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/button_bg.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/card_bg.xml" value="0.25" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/ic_empty_inbox__outline.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/members_card_bg.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/nointernet.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/tag_bg.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/activity_detail.xml" value="0.22" />
-        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/activity_web_refrence.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/cypto_item_layout.xml" value="0.33" />
