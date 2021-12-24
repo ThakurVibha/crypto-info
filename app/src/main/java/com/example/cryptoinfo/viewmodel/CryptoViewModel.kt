@@ -37,8 +37,8 @@ class CryptoViewModel(application: Application) : AndroidViewModel(application) 
         cryptoRepository.fetchTagsData(id)
     }
 
-    fun fetchCryptoMarketData() {
-        cryptoRepository.getMarketData()
-    }
+//    fun fetchCryptoMarketData() {
+//        cryptoRepository.getMarketData()
+//    }
 
 }

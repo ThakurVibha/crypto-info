@@ -3,4 +3,7 @@
     <string name="info_text">Scroll your \n favourite Crypto</string>
     <string name="loreum_ipsum">platform for applications.Applications build on it can use smart contracts - computer algorithms which execute themselves when data is supplied to the platform. \n There is no need for any human operators</string>
     <string name="check_internet_and_try_again">Check Internet and try again</string>
+    <string name="details">Details</string>
+    <string name="test_string">Satoshi Nakamoto</string>
+    <string name="decentralisied">Decentralisied</string>
 </resources>

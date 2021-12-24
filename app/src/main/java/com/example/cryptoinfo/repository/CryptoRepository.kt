@@ -1,7 +1,9 @@
 package com.example.cryptoinfo.repository
 
 import android.app.Application
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.distinctUntilChanged
 import com.example.cryptoinfo.data.cryptodetails.CryptoDeatils
 import com.example.cryptoinfo.data.cryptomarketdetails.CryptoMarketDetails
 import com.example.cryptoinfo.data.cryptonames.CryptoName
@@ -20,32 +22,50 @@ class CryptoRepository(application: Application) {
 
 
     fun fetchCryptoNamesData() {
-        CoroutineScope(Dispatchers.IO).launch {
-            val crypto = RetrofitInstance.cryptoService.getCoinsData().await()
-            mSuccessData.postValue(crypto)
+        try{
+            CoroutineScope(Dispatchers.IO).launch {
+                val crypto = RetrofitInstance.cryptoService.getCoinsData().await()
+                mSuccessData.postValue(crypto)
+
+            }
+        }catch (e:Exception){
+            Log.e("TAG", e.localizedMessage)
         }
+
     }
 
     fun fetchTagsData(id: String) {
-        CoroutineScope(Dispatchers.IO).launch {
-            val tagsData = RetrofitInstance.cryptoService.getCoinsDetailsData(id).await()
-            mSuccessTagsData.postValue(tagsData)
+        try {
+            CoroutineScope(Dispatchers.IO).launch {
+                val tagsData = RetrofitInstance.cryptoService.getCoinsDetailsData(id).await()
+                mSuccessTagsData.postValue(tagsData)
+            }
+        }catch (e:Exception){
+            Log.e("TAG", e.localizedMessage)
         }
+
     }
 
     fun fetchMembersData(id: String) {
-        CoroutineScope(Dispatchers.IO).launch {
-            val membersData = RetrofitInstance.cryptoService.getCoinsDetailsData(id).await()
-            mSuccessMembersData.postValue(membersData)
-        }
-    }
+        try {
+            CoroutineScope(Dispatchers.IO).launch {
+                val membersData = RetrofitInstance.cryptoService.getCoinsDetailsData(id).await()
+                mSuccessMembersData.postValue(membersData)
+            }
 
-    fun getMarketData() {
-        CoroutineScope(Dispatchers.IO).launch {
-            val marketData = RetrofitInstance2.cryptoService.getCryptoMarketDetails().await()
-            mSuccessCryptoMarketData.postValue(marketData)
+        }catch (e:Exception){
+            Log.e("TAG", e.localizedMessage)
+
         }
+
     }
+//
+//    fun getMarketData() {
+//        CoroutineScope(Dispatchers.IO).launch {
+//            val marketData = RetrofitInstance2.cryptoService.getCryptoMarketDetails().await()
+//            mSuccessCryptoMarketData.postValue(marketData)
+//        }
+//    }
 
 
 }
