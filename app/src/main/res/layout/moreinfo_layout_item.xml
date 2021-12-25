@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/card_bg"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tvTotalSupply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="535353"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/light_grey"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/viewSub4"
+            app:layout_constraintTop_toBottomOf="@+id/viewSub4" />
+
+        <TextView
+            android:id="@+id/tvCurrencyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="Bitcoin (BTC)"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="Active"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="Rank: 6"
+            android:textColor="@color/light_grey"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvStatus"
+            app:layout_constraintStart_toStartOf="@+id/tvStatus"
+            app:layout_constraintTop_toBottomOf="@+id/tvStatus" />
+
+        <TextView
+            android:id="@+id/tvSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="BTC"
+            android:textColor="@color/light_grey"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvCurrencyName"
+            app:layout_constraintTop_toBottomOf="@+id/tvCurrencyName" />
+
+        <View
+            android:id="@+id/viewMain"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvRank"
+            app:layout_constraintStart_toStartOf="@+id/tvSymbol"
+            app:layout_constraintTop_toBottomOf="@+id/tvSymbol" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="Slug :"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/viewMain"
+            app:layout_constraintTop_toBottomOf="@+id/viewMain" />
+
+
+        <TextView
+            android:id="@+id/tvSlug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:fontFamily="@font/merriweather_regular"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/light_grey"
+            app:layout_constraintEnd_toEndOf="@+id/viewMain"
+            app:layout_constraintTop_toBottomOf="@+id/viewMain" />
+
+        <View
+            android:id="@+id/viewSub1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/tvSlug"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Market pairs :"
+            android:fontFamily="@font/merriweather_regular"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/viewSub1"
+            app:layout_constraintTop_toBottomOf="@+id/viewSub1" />
+
+        <TextView
+            android:id="@+id/tvMarketPairs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="5454"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/light_grey"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/viewSub1"
+            app:layout_constraintTop_toBottomOf="@+id/viewSub1" />
+
+        <View
+            android:id="@+id/viewSub2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvMarketPairs"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="Added date"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/viewSub2"
+            app:layout_constraintTop_toBottomOf="@+id/viewSub2" />
+
+
+        <TextView
+            android:id="@+id/tvAddedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="6:636:4"
+            android:textColor="@color/light_grey"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/viewSub2"
+            app:layout_constraintTop_toBottomOf="@+id/viewSub2" />
+
+        <View
+            android:id="@+id/viewSub3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddedDate"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="Max. Supply :"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/viewSub3"
+            app:layout_constraintTop_toBottomOf="@+id/viewSub3" />
+
+        <TextView
+            android:id="@+id/tvMaxSupply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="423423"
+            android:fontFamily="@font/merriweather_regular"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/light_grey"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/viewSub3"
+            app:layout_constraintTop_toBottomOf="@+id/viewSub3" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvMaxSupply"
+            app:layout_constraintStart_toStartOf="@+id/tvMaxSupply"
+            app:layout_constraintTop_toBottomOf="@+id/tvMaxSupply" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="Total Supply :"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/viewSub4"
+            app:layout_constraintTop_toBottomOf="@+id/viewSub4" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Circulating supply :"
+            android:fontFamily="@font/merriweather_regular"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/view5"
+            app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+        <TextView
+            android:id="@+id/tvCirculatingSupply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="535353"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/light_grey"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/view5"
+            app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+        <View
+            android:id="@+id/viewSub4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <View
+            android:id="@+id/viewSub5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/tvTotalSupply"
+            app:layout_constraintStart_toStartOf="@+id/tvTotalSupply"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalSupply" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="@string/price_usd"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/viewSub5"
+            app:layout_constraintTop_toBottomOf="@+id/viewSub5" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/merriweather_regular"
+            android:text="53,6464533"
+            android:textColor="@color/light_grey"
+            android:textSize="15sp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/viewSub5"
+            app:layout_constraintTop_toBottomOf="@+id/viewSub5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

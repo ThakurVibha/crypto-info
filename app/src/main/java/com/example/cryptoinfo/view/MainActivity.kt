@@ -13,7 +13,6 @@ import com.example.cryptoinfo.utils.Communicator
 import com.example.cryptoinfo.utils.Constants.isInternetAvailable
 import com.example.cryptoinfo.utils.Constants.showSnackBar
 import com.example.cryptoinfo.viewmodel.CryptoViewModel
-import kotlinx.android.synthetic.main.activity_detail.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.btnInternet
 import kotlinx.android.synthetic.main.activity_main.ivEmpty
@@ -65,7 +64,6 @@ class MainActivity : AppCompatActivity(), Communicator {
             progressBar.visibility = View.GONE
             btnInternet.visibility=View.VISIBLE
 
-
         }
     }
 
@@ -81,9 +79,7 @@ class MainActivity : AppCompatActivity(), Communicator {
                 progressBar.visibility = View.GONE
                 ivEmpty.visibility = View.GONE
             })
-
         }
-
 
     }
 

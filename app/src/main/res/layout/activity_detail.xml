@@ -181,7 +181,7 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="80dp"
                 android:background="@drawable/members_card_bg"
-                android:fontFamily="@font/montserret_regular"
+                android:fontFamily="@font/merriweather_regular"
                 android:padding="20dp"
                 android:text="@string/loreum_ipsum"
                 android:textAlignment="center"

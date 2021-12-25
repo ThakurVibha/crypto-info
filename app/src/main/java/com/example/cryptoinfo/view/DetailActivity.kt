@@ -19,12 +19,9 @@ import kotlinx.android.synthetic.main.toolbar_layout.*
 
 class DetailActivity : AppCompatActivity() {
 
-    //ToDo handle null response from api
-
-
     lateinit var cryptoViewModel: CryptoViewModel
     lateinit var tagsAdapter: TagsAdapter
-    lateinit var membersAdapter: MembersAdapter
+    private lateinit var membersAdapter: MembersAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
@@ -45,6 +42,9 @@ class DetailActivity : AppCompatActivity() {
         }
         ivBack.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
+        }
+        ivMoreInfo.setOnClickListener {
+            startActivity(Intent(this, MoreInfoActivity::class.java))
         }
     }
 
@@ -88,9 +88,7 @@ class DetailActivity : AppCompatActivity() {
             })
         }
 
-//        cryptoViewModel.successMarketData().observe(this, Observer {
-//            Log.e("tags", "setObserver: $it")
-//        })
+
     }
 
     private fun initApi() {
@@ -102,7 +100,6 @@ class DetailActivity : AppCompatActivity() {
             cryptoViewModel.fetchMembersData(id)
             progressBar.visibility = View.VISIBLE
             ivEmpty.visibility = View.VISIBLE
-//            cryptoViewModel.fetchCryptoMarketData()
 
         } else {
             btnInternet.visibility = View.VISIBLE
@@ -110,10 +107,7 @@ class DetailActivity : AppCompatActivity() {
             ivEmpty.visibility = View.GONE
             progressBar.visibility = View.GONE
             clCard.visibility = View.GONE
-
-
         }
-
 
     }
 

@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.members_item_layout.view.*
 class MembersAdapter(var context: Context, var membersList: List<Team>) :
     RecyclerView.Adapter<MembersViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MembersViewHolder {
-        var view = LayoutInflater.from(context).inflate(R.layout.members_item_layout, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.members_item_layout, parent, false)
         return MembersViewHolder(view)
 
     }
@@ -27,6 +27,7 @@ class MembersAdapter(var context: Context, var membersList: List<Team>) :
     override fun getItemCount(): Int {
         return membersList.size
     }
+
 }
 
 class MembersViewHolder(itemview: View) : RecyclerView.ViewHolder(itemview)

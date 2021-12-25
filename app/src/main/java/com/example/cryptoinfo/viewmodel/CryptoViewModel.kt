@@ -24,7 +24,7 @@ class CryptoViewModel(application: Application) : AndroidViewModel(application) 
         return cryptoRepository.mSuccessTagsData
     }
 
-    fun successMarketData():MutableLiveData<CryptoMarketDetails>{
+    fun successMarketData(): MutableLiveData<CryptoMarketDetails> {
         return cryptoRepository.mSuccessCryptoMarketData
     }
 
@@ -37,8 +37,9 @@ class CryptoViewModel(application: Application) : AndroidViewModel(application) 
         cryptoRepository.fetchTagsData(id)
     }
 
-//    fun fetchCryptoMarketData() {
-//        cryptoRepository.getMarketData()
-//    }
+    fun fetchCryptoMarketData() {
+        cryptoRepository.getMarketData()
+    }
+
 
 }

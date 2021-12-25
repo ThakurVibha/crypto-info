@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    tools:context=".view.MoreInfoActivity">
+
+    <include
+        android:id="@+id/toolbarMoreInfo"
+        layout="@layout/moreinfo_toolbar_layout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        tools:listitem="@layout/moreinfo_layout_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMoreInfo" />
+
+    <ImageView
+        android:id="@+id/ivEmpty"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMoreInfo"
+        app:srcCompat="@drawable/ic_empty" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
