@@ -14,10 +14,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvInfo"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_height="wrap_content"
         tools:listitem="@layout/moreinfo_layout_item"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,13 +22,25 @@
 
     <ImageView
         android:id="@+id/ivEmpty"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="180dp"
         android:foregroundGravity="center"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarMoreInfo"
         app:srcCompat="@drawable/ic_empty" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="@style/Widget.AppCompat.ProgressBar"
+        app:layout_constraintEnd_toEndOf="@+id/ivEmpty"
+        app:layout_constraintStart_toStartOf="@+id/ivEmpty"
+        app:layout_constraintTop_toBottomOf="@+id/ivEmpty" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,7 +11,6 @@
         android:id="@+id/clCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:background="@drawable/card_bg"
@@ -86,7 +85,7 @@
         <View
             android:id="@+id/viewMain"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="0.1dp"
             android:background="@color/white"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
@@ -99,12 +98,13 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
             android:fontFamily="@font/merriweather_regular"
             android:text="Slug :"
-            android:layout_marginTop="10dp"
             android:textColor="@color/white"
             android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/viewMain"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/viewMain" />
 
 
@@ -112,18 +112,18 @@
             android:id="@+id/tvSlug"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="test"
             android:fontFamily="@font/merriweather_regular"
-            android:textSize="15sp"
+            android:text="test"
             android:layout_marginTop="10dp"
             android:textColor="@color/light_grey"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@+id/viewMain"
             app:layout_constraintTop_toBottomOf="@+id/viewMain" />
 
         <View
             android:id="@+id/viewSub1"
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="0.1dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="10dp"
@@ -158,7 +158,7 @@
         <View
             android:id="@+id/viewSub2"
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="0.1dp"
             android:background="@color/white"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
@@ -171,7 +171,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/merriweather_regular"
-            android:text="Added date"
+            android:text="Added date :"
             android:layout_marginTop="10dp"
             android:textColor="@color/white"
             android:textSize="16sp"
@@ -194,7 +194,7 @@
         <View
             android:id="@+id/viewSub3"
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="0.1dp"
             android:background="@color/white"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
@@ -230,7 +230,7 @@
         <View
             android:id="@+id/view5"
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="0.1dp"
             android:background="@color/white"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
@@ -278,7 +278,7 @@
         <View
             android:id="@+id/viewSub4"
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="0.1dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
@@ -290,7 +290,7 @@
         <View
             android:id="@+id/viewSub5"
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="0.1dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="10dp"

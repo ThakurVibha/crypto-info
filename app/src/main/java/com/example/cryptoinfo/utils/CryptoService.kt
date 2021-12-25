@@ -23,7 +23,6 @@ interface CryptoService {
     fun getCoinsDetailsData(@Path("id")id:String): Call<CryptoDeatils>
 
     @GET("cryptocurrency/listings/latest")
-//    @Headers("X-CMC_PRO_API_KEY: a33fbb95-9591-46b5-899d-cd6815e66d9a")
     fun getCryptoMarketDetails(@Query("CMC_PRO_API_KEY")key:String):Call<CryptoMarketDetails>
 
 }
