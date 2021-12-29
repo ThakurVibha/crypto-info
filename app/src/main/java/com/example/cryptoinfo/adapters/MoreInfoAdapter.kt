@@ -35,6 +35,8 @@ class MoreInfoAdapter(var moreInfoList: List<Data>, var context: Context) :
     override fun getItemCount(): Int {
         return moreInfoList.size
     }
+
+
 }
 
 class MoreInfoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)

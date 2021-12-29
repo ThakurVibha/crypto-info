@@ -1,9 +1,11 @@
-package com.example.cryptoinfo.view
+package com.example.cryptoinfo.view.fragments
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -12,19 +14,24 @@ import com.example.cryptoinfo.adapters.CryptoNameAdapter
 import com.example.cryptoinfo.utils.Communicator
 import com.example.cryptoinfo.utils.Constants.isInternetAvailable
 import com.example.cryptoinfo.utils.Constants.showSnackBar
+import com.example.cryptoinfo.view.activities.DetailActivity
 import com.example.cryptoinfo.viewmodel.CryptoViewModel
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.btnInternet
-import kotlinx.android.synthetic.main.activity_main.ivEmpty
-import kotlinx.android.synthetic.main.activity_main.progressBar
+import kotlinx.android.synthetic.main.fragment_currency.*
 
-class MainActivity : AppCompatActivity(), Communicator {
+class CurrencyFragment : Fragment(), Communicator {
     lateinit var cryptoViewModel: CryptoViewModel
     lateinit var cryptoNameAdapter: CryptoNameAdapter
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_currency, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         initViewModel()
         setObserver()
         onClick()
@@ -33,7 +40,7 @@ class MainActivity : AppCompatActivity(), Communicator {
 
     private fun onClick() {
         btnInternet.setOnClickListener{
-           if(isInternetAvailable(this)){
+           if(isInternetAvailable(requireContext())){
                initApi()
                setObserver()
            }else{
@@ -50,7 +57,7 @@ class MainActivity : AppCompatActivity(), Communicator {
     }
 
     private fun initApi() {
-        if (isInternetAvailable(this)) {
+        if (isInternetAvailable(requireContext())) {
             cryptoViewModel.fetchCryptoData()
             ivInternet.visibility = View.GONE
             progressBar.visibility = View.VISIBLE
@@ -68,14 +75,12 @@ class MainActivity : AppCompatActivity(), Communicator {
     }
 
 
-
-
     private fun setObserver() {
-        if(isInternetAvailable(this)){
-            cryptoViewModel.successData().observe(this, Observer {
-                cryptoNameAdapter = CryptoNameAdapter(this, it, this)
+        if(isInternetAvailable(requireContext())){
+            cryptoViewModel.successData().observe(requireActivity(), Observer {
+                cryptoNameAdapter = CryptoNameAdapter(requireContext(), it, this)
                 rvCrypto.adapter = cryptoNameAdapter
-                rvCrypto.layoutManager = LinearLayoutManager(this)
+                rvCrypto.layoutManager = LinearLayoutManager(requireContext())
                 progressBar.visibility = View.GONE
                 ivEmpty.visibility = View.GONE
             })
@@ -84,7 +89,7 @@ class MainActivity : AppCompatActivity(), Communicator {
     }
 
     override fun onPassingID(id: String) {
-        var intent = Intent(this, DetailActivity::class.java)
+        var intent = Intent(requireContext(), DetailActivity::class.java)
         intent.putExtra("id", id)
         startActivity(intent)
     }

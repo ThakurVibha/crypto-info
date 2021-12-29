@@ -27,8 +27,6 @@ class CryptoRepository(application: Application) {
             mSuccessData.postValue(crypto)
 
         }
-
-
     }
 
     fun fetchTagsData(id: String) {
@@ -36,16 +34,13 @@ class CryptoRepository(application: Application) {
             val tagsData = RetrofitInstance.cryptoService.getCoinsDetailsData(id).await()
             mSuccessTagsData.postValue(tagsData)
         }
-
     }
 
     fun fetchMembersData(id: String) {
         CoroutineScope(Dispatchers.IO).launch {
             val membersData = RetrofitInstance.cryptoService.getCoinsDetailsData(id).await()
             mSuccessMembersData.postValue(membersData)
-
         }
-
     }
 
     fun getMarketData() {

@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cryptoinfo.R
 import com.example.cryptoinfo.data.converteddata.ConvertModel
-import kotlinx.android.synthetic.main.convertor_item_layout.view.*
 
 class ConvertorAdapter(var context: Context, var convertedList:List<ConvertModel>):RecyclerView.Adapter<ConvertorViewHolder>() {
 

@@ -1,4 +1,4 @@
-package com.example.cryptoinfo.view
+package com.example.cryptoinfo.view.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +13,7 @@ import com.example.cryptoinfo.adapters.MembersAdapter
 import com.example.cryptoinfo.adapters.TagsAdapter
 import com.example.cryptoinfo.utils.Constants
 import com.example.cryptoinfo.utils.Constants.showSnackBar
+import com.example.cryptoinfo.view.fragments.CurrencyFragment
 import com.example.cryptoinfo.viewmodel.CryptoViewModel
 import kotlinx.android.synthetic.main.activity_detail.*
 import kotlinx.android.synthetic.main.toolbar_layout.*
@@ -41,7 +42,7 @@ class DetailActivity : AppCompatActivity() {
             }
         }
         ivBack.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, CurrencyFragment::class.java))
         }
         ivMoreInfo.setOnClickListener {
             startActivity(Intent(this, MoreInfoActivity::class.java))

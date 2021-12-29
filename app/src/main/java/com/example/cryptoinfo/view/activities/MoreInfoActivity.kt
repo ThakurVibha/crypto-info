@@ -1,4 +1,4 @@
-package com.example.cryptoinfo.view
+package com.example.cryptoinfo.view.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,7 +11,6 @@ import com.example.cryptoinfo.R
 import com.example.cryptoinfo.adapters.MoreInfoAdapter
 import com.example.cryptoinfo.utils.Constants
 import com.example.cryptoinfo.viewmodel.CryptoViewModel
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_more_info.*
 import kotlinx.android.synthetic.main.activity_more_info.ivEmpty
 import kotlinx.android.synthetic.main.activity_more_info.progressBar

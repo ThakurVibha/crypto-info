@@ -15,4 +15,9 @@ data class Data(
     val symbol: String,
     val tags: List<String>,
     val total_supply: Float
-)
+){
+    override fun toString(): String {
+        return name
+    }
+}
+

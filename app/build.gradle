@@ -62,5 +62,8 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
 
+    //onBoarding
+    implementation 'com.ramotion.paperonboarding:paper-onboarding:1.1.3'
+
 
 }

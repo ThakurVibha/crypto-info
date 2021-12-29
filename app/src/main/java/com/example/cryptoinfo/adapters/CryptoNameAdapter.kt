@@ -2,7 +2,6 @@ package com.example.cryptoinfo.adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,12 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.cryptoinfo.R
 import com.example.cryptoinfo.data.cryptonames.CryptoNameItem
 import com.example.cryptoinfo.utils.Communicator
-import com.example.cryptoinfo.view.DetailActivity
-import com.example.cryptoinfo.view.MainActivity
 import kotlinx.android.synthetic.main.cypto_item_layout.view.*
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 
 class CryptoNameAdapter(var context: Context, var cryptoNameList: List<CryptoNameItem>, var communicator: Communicator) :
     RecyclerView.Adapter<CryptoViewHolder>() {
