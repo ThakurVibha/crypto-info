@@ -1,6 +1,7 @@
 package com.example.cryptoinfo.view.fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -42,7 +43,8 @@ class CalculatorFragment : Fragment() {
     }
 
     private fun onSpinnerItemSelection() {
-        spCountries.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+
+        spCurrencies.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>?,
                 view: View?,
@@ -50,16 +52,13 @@ class CalculatorFragment : Fragment() {
                 id: Long
             ) {
 
-                Toast.makeText(
-                    requireContext(),
-                    parent!!.getItemAtPosition(position).toString(),
-                    Toast.LENGTH_SHORT
-                ).show()
+              cryptoViewModel.fetchPriceByID()
 
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
             }
+
 
         }
     }
@@ -77,7 +76,12 @@ class CalculatorFragment : Fragment() {
         cryptoViewModel.successMarketData().observe(requireActivity(), Observer {
             adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, it.data)
             spCurrencies.adapter = adapter
-            //TODO add spinners and complete functionality of getting list of items
+
+        })
+
+        cryptoViewModel.successPriceData().observe(requireActivity(), Observer {
+            Log.e("data", "onItemSelected: "+it.quote.USD )
+
 
         })
 

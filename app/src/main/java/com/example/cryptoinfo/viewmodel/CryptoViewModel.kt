@@ -5,6 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import com.example.cryptoinfo.data.cryptodetails.CryptoDeatils
 import com.example.cryptoinfo.data.cryptomarketdetails.CryptoMarketDetails
+import com.example.cryptoinfo.data.cryptomarketdetails.Data
 import com.example.cryptoinfo.data.cryptonames.CryptoName
 import com.example.cryptoinfo.repository.CryptoRepository
 
@@ -39,6 +40,21 @@ class CryptoViewModel(application: Application) : AndroidViewModel(application) 
 
     fun fetchCryptoMarketData() {
         cryptoRepository.getMarketData()
+    }
+
+    //to get usd price in calculator fragment
+
+    fun fetchPrice(){
+        cryptoRepository.getCryptoPrice()
+    }
+
+    fun successPriceData():MutableLiveData<Data>{
+        return cryptoRepository.mSuccessPriceData
+    }
+
+    fun fetchPriceByID() {
+        cryptoRepository.fetchPriceById()
+
     }
 
 

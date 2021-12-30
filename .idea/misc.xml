@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/bottom_nav_bg.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/button_bg.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/calci.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/calci_circle.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/calculator_bg.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/card_bg.xml" value="0.25" />
@@ -14,6 +15,7 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/nointernet.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/tag_bg.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/white_bg.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/white_card.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/white_tag_bg.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/activity_crypto.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/activity_detail.xml" value="0.22" />
@@ -26,7 +28,7 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/fragment_convertor.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/fragment_currency.xml" value="0.14166666666666666" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/members_item_layout.xml" value="0.33" />
-        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/moreinfo_layout_item.xml" value="0.5" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/moreinfo_layout_item.xml" value="0.22" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/moreinfo_toolbar_layout.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/tag_item_lyout.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/layout/toolbar_layout.xml" value="0.22" />

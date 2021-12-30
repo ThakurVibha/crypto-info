@@ -13,8 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
-        android:background="@drawable/card_bg"
-        android:elevation="8dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/white_bg"
+        android:elevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -39,7 +40,7 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/merriweather_regular"
             android:text="Bitcoin (BTC)"
-            android:textColor="@color/white"
+            android:textColor="@color/primary_color"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -52,7 +53,7 @@
             android:layout_marginEnd="20dp"
             android:fontFamily="@font/merriweather_regular"
             android:text="Active"
-            android:textColor="@color/white"
+            android:textColor="@color/primary_color"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -86,7 +87,7 @@
             android:id="@+id/viewMain"
             android:layout_width="match_parent"
             android:layout_height="0.1dp"
-            android:background="@color/white"
+            android:background="@color/primary_color"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="15dp"
@@ -102,7 +103,7 @@
             android:layout_marginStart="20dp"
             android:fontFamily="@font/merriweather_regular"
             android:text="Slug :"
-            android:textColor="@color/white"
+            android:textColor="@color/primary_color"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/viewMain" />
@@ -127,7 +128,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="10dp"
-            android:background="@color/white"
+            android:background="@color/primary_color"
             app:layout_constraintTop_toBottomOf="@+id/tvSlug"
             tools:layout_editor_absoluteX="0dp" />
 
@@ -139,7 +140,7 @@
             android:fontFamily="@font/merriweather_regular"
             android:textSize="16sp"
             android:layout_marginTop="10dp"
-            android:textColor="@color/white"
+            android:textColor="@color/primary_color"
             app:layout_constraintStart_toStartOf="@+id/viewSub1"
             app:layout_constraintTop_toBottomOf="@+id/viewSub1" />
 
@@ -159,7 +160,7 @@
             android:id="@+id/viewSub2"
             android:layout_width="match_parent"
             android:layout_height="0.1dp"
-            android:background="@color/white"
+            android:background="@color/primary_color"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="10dp"
@@ -173,7 +174,7 @@
             android:fontFamily="@font/merriweather_regular"
             android:text="Added date :"
             android:layout_marginTop="10dp"
-            android:textColor="@color/white"
+            android:textColor="@color/primary_color"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/viewSub2"
             app:layout_constraintTop_toBottomOf="@+id/viewSub2" />
@@ -195,7 +196,7 @@
             android:id="@+id/viewSub3"
             android:layout_width="match_parent"
             android:layout_height="0.1dp"
-            android:background="@color/white"
+            android:background="@color/primary_color"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="10dp"
@@ -210,7 +211,7 @@
             android:fontFamily="@font/merriweather_regular"
             android:text="Max. Supply :"
             android:layout_marginTop="10dp"
-            android:textColor="@color/white"
+            android:textColor="@color/primary_color"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/viewSub3"
             app:layout_constraintTop_toBottomOf="@+id/viewSub3" />
@@ -231,7 +232,7 @@
             android:id="@+id/view5"
             android:layout_width="match_parent"
             android:layout_height="0.1dp"
-            android:background="@color/white"
+            android:background="@color/primary_color"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="10dp"
@@ -246,7 +247,7 @@
             android:fontFamily="@font/merriweather_regular"
             android:text="Total Supply :"
             android:layout_marginTop="10dp"
-            android:textColor="@color/white"
+            android:textColor="@color/primary_color"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/viewSub4"
             app:layout_constraintTop_toBottomOf="@+id/viewSub4" />
@@ -258,7 +259,7 @@
             android:text="Circulating supply :"
             android:fontFamily="@font/merriweather_regular"
             android:layout_marginTop="10dp"
-            android:textColor="@color/white"
+            android:textColor="@color/primary_color"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/view5"
             app:layout_constraintTop_toBottomOf="@+id/view5" />
@@ -282,7 +283,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
-            android:background="@color/white"
+            android:background="@color/primary_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView17"
             app:layout_constraintTop_toBottomOf="@+id/textView17" />
@@ -294,7 +295,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="10dp"
-            android:background="@color/white"
+            android:background="@color/primary_color"
             app:layout_constraintEnd_toEndOf="@+id/tvTotalSupply"
             app:layout_constraintStart_toStartOf="@+id/tvTotalSupply"
             app:layout_constraintTop_toBottomOf="@+id/tvTotalSupply" />
@@ -306,7 +307,7 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/merriweather_regular"
             android:text="@string/price_usd"
-            android:textColor="@color/white"
+            android:textColor="@color/primary_color"
             android:textSize="18sp"
             android:layout_marginBottom="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
