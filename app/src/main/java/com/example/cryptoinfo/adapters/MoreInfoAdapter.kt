@@ -6,10 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cryptoinfo.R
-import com.example.cryptoinfo.data.cryptomarketdetails.Data
+import com.example.cryptoinfo.model.cryptomarketcap.cryptomarketdetails.Data
+import com.example.cryptoinfo.utils.communicators.Onclick
 import kotlinx.android.synthetic.main.moreinfo_layout_item.view.*
 
-class MoreInfoAdapter(var moreInfoList: List<Data>, var context: Context) :
+class MoreInfoAdapter(var moreInfoList: List<Data>, var context: Context, var onclick: Onclick) :
     RecyclerView.Adapter<MoreInfoViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoreInfoViewHolder {
         var view =
@@ -29,8 +30,14 @@ class MoreInfoAdapter(var moreInfoList: List<Data>, var context: Context) :
         holder.itemView.tvRank.text= dataList.cmc_rank.toString()
         holder.itemView.tvSymbol.text= dataList.symbol
 
+        holder.itemView.setOnClickListener {
+        onclick.onClick()
+
+        }
+
 
     }
+
 
     override fun getItemCount(): Int {
         return moreInfoList.size

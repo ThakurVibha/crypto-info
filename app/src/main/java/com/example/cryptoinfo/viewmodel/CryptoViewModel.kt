@@ -3,10 +3,9 @@ package com.example.cryptoinfo.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import com.example.cryptoinfo.data.cryptodetails.CryptoDeatils
-import com.example.cryptoinfo.data.cryptomarketdetails.CryptoMarketDetails
-import com.example.cryptoinfo.data.cryptomarketdetails.Data
-import com.example.cryptoinfo.data.cryptonames.CryptoName
+import com.example.cryptoinfo.model.coinpapernika.cryptodetails.CryptoDeatils
+import com.example.cryptoinfo.model.cryptomarketcap.cryptomarketdetails.CryptoMarketDetails
+import com.example.cryptoinfo.model.coinpapernika.cryptonames.CryptoName
 import com.example.cryptoinfo.repository.CryptoRepository
 
 class CryptoViewModel(application: Application) : AndroidViewModel(application) {
@@ -44,18 +43,26 @@ class CryptoViewModel(application: Application) : AndroidViewModel(application) 
 
     //to get usd price in calculator fragment
 
-    fun fetchPrice(){
-        cryptoRepository.getCryptoPrice()
-    }
+//    fun fetchPrice(){
+//        cryptoRepository.getCryptoPrice()
+//    }
 
-    fun successPriceData():MutableLiveData<Data>{
-        return cryptoRepository.mSuccessPriceData
-    }
+//    fun successPriceData():MutableLiveData<Data>{
+//        return cryptoRepository.mSuccessPriceData
+//    }
+//
+//
+//
+//    fun fetchPriceByID(id: Int) {
+//        cryptoRepository.fetchPriceById(id)
+//
+//    }
+//
+//    fun successPriceByIDdata():MutableLiveData<Data>{
+//        return cryptoRepository.mSuccessPriceByIDdata
+//    }
+//
 
-    fun fetchPriceByID() {
-        cryptoRepository.fetchPriceById()
-
-    }
 
 
 }

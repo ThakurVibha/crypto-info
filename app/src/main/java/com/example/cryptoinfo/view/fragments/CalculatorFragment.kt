@@ -1,20 +1,17 @@
 package com.example.cryptoinfo.view.fragments
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.cryptoinfo.R
 import com.example.cryptoinfo.adapters.MoreInfoAdapter
-import com.example.cryptoinfo.data.cryptomarketdetails.Data
+import com.example.cryptoinfo.model.cryptomarketcap.cryptomarketdetails.Data
 import com.example.cryptoinfo.viewmodel.CryptoViewModel
 import kotlinx.android.synthetic.main.fragment_convertor.*
 
@@ -23,7 +20,7 @@ class CalculatorFragment : Fragment() {
     lateinit var moreInfoAdapter: MoreInfoAdapter
     lateinit var cryptoViewModel: CryptoViewModel
     private lateinit var adapter: ArrayAdapter<Data>
-
+    lateinit var communicatorForID: CommunicatorForID
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,7 +49,17 @@ class CalculatorFragment : Fragment() {
                 id: Long
             ) {
 
-              cryptoViewModel.fetchPriceByID()
+//                cryptoViewModel.successPriceData().observe(requireActivity(), Observer {
+//                    Log.e("data", "onItemSelected: " + it.id)
+//                    cryptoViewModel.fetchPriceByID(it.id)
+//
+//                })
+
+//                cryptoViewModel.successPriceByIDdata().observe(requireActivity(), Observer {
+//                    Log.e(TAG, "onItemSelected: ", )
+//                })
+
+
 
             }
 
@@ -65,6 +72,8 @@ class CalculatorFragment : Fragment() {
 
     private fun initAPI() {
         cryptoViewModel.fetchCryptoMarketData()
+//        cryptoViewModel.fetchPrice()
+
 
     }
 
@@ -76,12 +85,6 @@ class CalculatorFragment : Fragment() {
         cryptoViewModel.successMarketData().observe(requireActivity(), Observer {
             adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, it.data)
             spCurrencies.adapter = adapter
-
-        })
-
-        cryptoViewModel.successPriceData().observe(requireActivity(), Observer {
-            Log.e("data", "onItemSelected: "+it.quote.USD )
-
 
         })
 

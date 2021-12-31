@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cryptoinfo.R
-import com.example.cryptoinfo.data.cryptodetails.Team
+import com.example.cryptoinfo.model.coinpapernika.cryptodetails.Team
 import kotlinx.android.synthetic.main.members_item_layout.view.*
 
 class MembersAdapter(var context: Context, var membersList: List<Team>) :

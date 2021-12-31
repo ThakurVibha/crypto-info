@@ -11,14 +11,14 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cryptoinfo.R
 import com.example.cryptoinfo.adapters.CryptoNameAdapter
-import com.example.cryptoinfo.utils.Communicator
+import com.example.cryptoinfo.utils.communicators.onPassingID
 import com.example.cryptoinfo.utils.Constants.isInternetAvailable
 import com.example.cryptoinfo.utils.Constants.showSnackBar
 import com.example.cryptoinfo.view.activities.DetailActivity
 import com.example.cryptoinfo.viewmodel.CryptoViewModel
 import kotlinx.android.synthetic.main.fragment_currency.*
 
-class CurrencyFragment : Fragment(), Communicator {
+class CurrencyFragment : Fragment(), onPassingID {
     lateinit var cryptoViewModel: CryptoViewModel
     lateinit var cryptoNameAdapter: CryptoNameAdapter
 

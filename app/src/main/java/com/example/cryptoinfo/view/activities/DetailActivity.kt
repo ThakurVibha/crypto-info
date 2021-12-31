@@ -96,9 +96,11 @@ class DetailActivity : AppCompatActivity() {
         if (Constants.isInternetAvailable(this)) {
             btnInternet.visibility = View.GONE
             ivNoInternet.visibility = View.GONE
+
             var id = intent.getStringExtra("id")!!
             cryptoViewModel.fetchTagsData(id)
             cryptoViewModel.fetchMembersData(id)
+
             progressBar.visibility = View.VISIBLE
             ivEmpty.visibility = View.VISIBLE
 

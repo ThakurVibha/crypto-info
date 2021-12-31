@@ -7,11 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cryptoinfo.R
-import com.example.cryptoinfo.data.cryptonames.CryptoNameItem
-import com.example.cryptoinfo.utils.Communicator
+import com.example.cryptoinfo.model.coinpapernika.cryptonames.CryptoNameItem
+import com.example.cryptoinfo.utils.communicators.onPassingID
 import kotlinx.android.synthetic.main.cypto_item_layout.view.*
 
-class CryptoNameAdapter(var context: Context, var cryptoNameList: List<CryptoNameItem>, var communicator: Communicator) :
+class CryptoNameAdapter(var context: Context, var cryptoNameList: List<CryptoNameItem>, var communicator: onPassingID) :
     RecyclerView.Adapter<CryptoViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CryptoViewHolder {

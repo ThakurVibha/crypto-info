@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+    android:background="@drawable/dialog_bg">
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ethereum" />
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ethereum"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserret_regular"
+        app:layout_constraintEnd_toEndOf="@+id/ivLogo"
+        app:layout_constraintStart_toStartOf="@+id/ivLogo"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <TextView
+        android:id="@+id/tvWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore Web"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:textColor="@color/primary_color"
+        android:background="@drawable/button_bg"
+        app:layout_constraintEnd_toEndOf="@+id/tvName"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <ImageView
+        android:id="@+id/ivWebsite"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/tvWeb"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeb"
+        app:srcCompat="@drawable/info_website_icon" />
+
+    <ImageView
+        android:id="@+id/ivTwitter"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivWebsite"
+        app:layout_constraintEnd_toStartOf="@+id/ivMessage"
+        app:layout_constraintStart_toEndOf="@+id/ivWebsite"
+        app:layout_constraintTop_toTopOf="@+id/ivWebsite"
+        app:srcCompat="@drawable/info_twitter_icon" />
+
+    <ImageView
+        android:id="@+id/ivMessage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivTwitter"
+        app:layout_constraintEnd_toEndOf="@+id/tvWeb"
+        app:layout_constraintTop_toTopOf="@+id/ivTwitter"
+        app:srcCompat="@drawable/info_message_icon" />
+
+    <ImageView
+        android:id="@+id/ivChat"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/ivWebsite"
+        app:layout_constraintTop_toBottomOf="@+id/ivWebsite"
+        app:srcCompat="@drawable/info_chat_icon" />
+
+    <ImageView
+        android:id="@+id/ivMeta"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivChat"
+        app:layout_constraintEnd_toStartOf="@+id/ivExplorer"
+        app:layout_constraintStart_toEndOf="@+id/ivChat"
+        app:layout_constraintTop_toTopOf="@+id/ivChat"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/info_meta_icon" />
+
+    <ImageView
+        android:id="@+id/ivExplorer"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivMeta"
+        app:layout_constraintEnd_toEndOf="@+id/ivMessage"
+        app:layout_constraintTop_toTopOf="@+id/ivMeta"
+        app:srcCompat="@drawable/info_explorer_icon" />
+
+    <ImageView
+        android:id="@+id/ivReddit"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivChat"
+        app:layout_constraintTop_toBottomOf="@+id/ivChat"
+        app:srcCompat="@drawable/info_reddit_icon" />
+
+    <ImageView
+        android:id="@+id/ivDocs"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivReddit"
+        app:layout_constraintEnd_toStartOf="@+id/ivGit"
+        app:layout_constraintStart_toEndOf="@+id/ivReddit"
+        app:layout_constraintTop_toTopOf="@+id/ivReddit"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/info_document_icon" />
+
+    <ImageView
+        android:id="@+id/ivGit"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivDocs"
+        app:layout_constraintEnd_toEndOf="@+id/ivExplorer"
+        app:layout_constraintTop_toTopOf="@+id/ivDocs"
+        app:srcCompat="@drawable/info_github_icon" />
+
+    <ImageView
+        android:id="@+id/ivCancel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_cancel_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

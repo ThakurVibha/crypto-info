@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cryptoinfo.R
-import com.example.cryptoinfo.data.cryptodetails.Tag
+import com.example.cryptoinfo.model.coinpapernika.cryptodetails.Tag
 import kotlinx.android.synthetic.main.tag_item_lyout.view.*
 
 class TagsAdapter(var context: Context, var cryptoDetailsList: List<Tag>) :
