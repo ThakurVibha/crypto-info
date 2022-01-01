@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CryptoInfo">
         <activity
-            android:name=".view.activities.OnBoardingActivity"
+            android:name=".view.activities.CryptoActivity"
             android:exported="true" />
         <activity
             android:name=".view.activities.MoreInfoActivity"
@@ -26,7 +26,7 @@
             android:name=".view.activities.DetailActivity"
             android:exported="true" />
         <activity
-            android:name=".view.activities.CryptoActivity"
+            android:name=".view.activities.OnBoardingActivity"
             android:exported="true"
             tools:ignore="Instantiatable">
             <intent-filter>

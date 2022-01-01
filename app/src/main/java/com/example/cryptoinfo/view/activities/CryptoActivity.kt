@@ -1,5 +1,7 @@
 package com.example.cryptoinfo.view.activities
 
+import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.cryptoinfo.R
@@ -8,6 +10,7 @@ import com.example.cryptoinfo.view.fragments.CurrencyFragment
 import kotlinx.android.synthetic.main.activity_crypto.*
 
 class CryptoActivity : AppCompatActivity() {
+
     var currencyFragment = CurrencyFragment()
     var calculatorFragment = CalculatorFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +18,7 @@ class CryptoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_crypto)
         supportFragmentManager.beginTransaction().replace(R.id.container, currencyFragment).commit()
         selectFragment()
+
     }
 
     private fun selectFragment() {

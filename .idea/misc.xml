@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/bottom_nav_bg.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/button_bg.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/button_blue_bg.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/calci.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/calci_circle.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/calculator_bg.xml" value="0.21614583333333334" />
@@ -12,8 +13,12 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/circle.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/dialog_bg.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/ic_empty_inbox__outline.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/info_document_icon.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/members_card_bg.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/nointernet.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/onbaording_sheet_bg.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/onboardingimage1.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/onboardingimage2.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/tag_bg.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/white_bg.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/CryptoInfo/app/src/main/res/drawable/white_card.xml" value="0.21614583333333334" />
