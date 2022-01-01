@@ -20,7 +20,6 @@ class CalculatorFragment : Fragment() {
     lateinit var moreInfoAdapter: MoreInfoAdapter
     lateinit var cryptoViewModel: CryptoViewModel
     private lateinit var adapter: ArrayAdapter<Data>
-    lateinit var communicatorForID: CommunicatorForID
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

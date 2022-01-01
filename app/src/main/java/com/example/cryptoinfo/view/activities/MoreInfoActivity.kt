@@ -1,6 +1,7 @@
 package com.example.cryptoinfo.view.activities
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -37,9 +38,10 @@ class MoreInfoActivity : AppCompatActivity(), Onclick {
             clMoreInfo.visibility=View.VISIBLE
         }
 
-        TODO("make an api callto get url data")
         ivWebsite.setOnClickListener {
-            var openWebsiteIntent= Intent(Intent.ACTION_VIEW, )
+            var openWebsiteIntent= Intent(Intent.ACTION_VIEW, Uri.parse("https://anryze.com/"))
+            startActivity(openWebsiteIntent)
+
         }
 
     }

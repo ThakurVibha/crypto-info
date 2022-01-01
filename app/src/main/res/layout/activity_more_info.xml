@@ -50,7 +50,6 @@
         android:id="@+id/infoDialog"
         layout="@layout/info_dialog_layout"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
