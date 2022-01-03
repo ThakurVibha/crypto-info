@@ -24,7 +24,7 @@ This Application allows users to view Cryptocurrency prices and monitor their ri
   
 ## INSPIRATION
 
-Recently I've had a particularly sparked interest in Digital Currency Specifically cryptocurrency.
+Recently i got interested in Digital Currency Specifically cryptocurrency.
 
 I believe Blockchain Technology might be the Second best invention after the Internet, also i wanted to learn blaockchain but i need to first master Native android development then i will definitly give it a shot.
 
