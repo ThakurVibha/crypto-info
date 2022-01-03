@@ -94,7 +94,7 @@ Market Cap = Price X Circulating Supply.
  #### OnBoarding Page.
 
 <p align="center">
-<img align="left" width="250" src="https://user-images.githubusercontent.com/72120614/147903570-4b016fc3-08cd-48c7-9b46-ab36f4a9a27a.png"  />
+<img align="left" width="250" src="https://user-images.githubusercontent.com/72120614/147904327-ca480f2c-2f65-404f-bf93-9f73361d21e7.jpg"  />
 <img align="centre" width="250" src="https://user-images.githubusercontent.com/72120614/147903646-4d155391-4b9a-4a64-aa61-d9a8b2d4e4cf.jpg"  />
 <img align="right" width="250" src="https://user-images.githubusercontent.com/72120614/147903663-2f5aae98-6ab0-4b80-ba93-164764cac36a.jpg" />
 <p>
