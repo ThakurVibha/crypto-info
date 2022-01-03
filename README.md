@@ -161,11 +161,13 @@ For more info about the API check out the API Section below.
   
 - Most importantly, in this architecture, the children don't have the direct reference to the parent, they only have the reference by observables.
   
-## COIN MARKET CAP API
-
-***Coin Market API*** Provides crypto market data endpoints **market price listing based on trade volume and market capitalization**.
-
-For CryptoByte **Gson components were used to parse JSON into Java objects**.
+## [COINMARKETCAP](https://coinmarketcap.com/api/documentation/v1/#tag/cryptocurrency) and [COINPAPRIKA](https://api.coinpaprika.com/v1/coins/btc-bitcoin) API
+  
+***The CoinMarketCap API*** is a suite of high-performance RESTful JSON endpoints that are specifically designed to meet the mission-critical demands of application developers, data scientists, and enterprise business platforms.
+  
+Coinpaprika api is a public api and we do not need any API KEY, we can use it directly.
+  
+For CryptoInfo **Gson components were used to parse JSON into Java objects**.
 
 ***Gson*** is an open source **Java library to serialize and deserialize Java objects to JSON**.
 
