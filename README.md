@@ -14,7 +14,9 @@ This Application allows users to view Cryptocurrency prices and monitor their ri
   
 - Built Cryptoinfo application with necessary Cryptocurries regarding information by leveraring the benefits of several public apis.
   
-- User can **View Lists of Cryptocurrencies** ***with their prices.***
+- User can **View Lists of Cryptocurrencies** ***with their prices.*** as well as all detailed information regarding team members, tags etc.
+  
+- User can explore all the related web references with respect to each coin.
 
 - For the ***prices user can*** keep track of **Hourly** (1hr), **Daily** (24hr) & **Weekly** (7dy), **Percentage Drop or rise**.
   
