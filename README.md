@@ -26,19 +26,15 @@ This Application allows users to view Cryptocurrency prices and monitor their ri
 
 Recently I've had a particularly sparked interest in Digital Currency Specifically cryptocurrency.
 
-If you asked me I believe Blockchain Technology might be the Second best invention after the Internet.
-
-However I might be wrong too. When it comes to technology there is always a complexity to determine it's future as things evolve really quick. So pardon me if you read this 10 years from when I wrote and discover I was terriblly wrong. :dizzy_face: My sincerest apologies. :smiley:
-
+I believe Blockchain Technology might be the Second best invention after the Internet, also i wanted to learn blaockchain but i need to first master Native android development then i will definitly give it a shot.
 
 **However Lets Talk Code!** :computer:
 
-**This project** came to mind after **Inspiration** by **[Brian Armstrong's](https://github.com/barmstrong)** project **[Bitcoin-Android](https://github.com/barmstrong/bitcoin-android)**. 
+**This project** came to mind, and i thought that let's build something regarding cryptocurrncies, then i came across several public apis.
 
-I wanted to **challenge myself** with code as I try wrap my head around the **Cryptocurrency world**.
+I wanted to **challenge myself** with code as I tried to build this app as clean as possible and i will try my best to optimize the code, i have used **Coroutines**, **MVVM**, **Livedata** and other **best practices**.
 
-I **believe** I have achieved that but I still have a long way to go in **understanding this masive world** as I strive valiently.
-
+Further this is not completed yet but i am daily working on this thing.
 
 ## PRE-REQUISITES.
 
