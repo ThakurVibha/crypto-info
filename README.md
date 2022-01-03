@@ -2,7 +2,7 @@
 <p align="center">
 <p>
 
-# CryptoInfo! :moneybag: :arrow_right: :iphone: 
+# CryptoInfo(For add switch to master branch)! :moneybag: :arrow_right: :iphone: 
 
 ## DESCRIPTION
 
