@@ -17,8 +17,6 @@ This Application allows users to view Cryptocurrency prices and monitor their ri
 - User can **View Lists of Cryptocurrencies** ***with their prices.*** as well as all detailed information regarding team members, tags etc.
   
 - User can explore all the related web references with respect to each coin.
-
-- For the ***prices user can*** keep track of **Hourly** (1hr), **Daily** (24hr) & **Weekly** (7dy), **Percentage Drop or rise**.
   
 - Calculator to covert and calculate cryptocurries to **USD** in using realtime crypto value.
   
