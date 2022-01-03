@@ -147,6 +147,7 @@ For more info about the API check out the [API](https://coinmarketcap.com/api/do
 
 - A type-safe HTTP client for Android and Java.
 
+  
 3. **[Picasso](https://github.com/square/okhttp)**
 
 - Picasso was used to display cryptocurrency logos.
