@@ -90,6 +90,33 @@ Market Cap = Price X Circulating Supply.
 - **What is "Max Supply"**
 
 ***Max Supply*** is the best approximation of the maximum amount of coins that will ever exist in the lifetime of the cryptocurrency.
+  
+ #### OnBoarding Page.
+
+<p align="center">
+<img align="left" width="250" src="https://user-images.githubusercontent.com/72120614/147903570-4b016fc3-08cd-48c7-9b46-ab36f4a9a27a.png" alt="Cryptobyte logo" />
+<img align="centre" width="250" src="https://user-images.githubusercontent.com/72120614/147903646-4d155391-4b9a-4a64-aa61-d9a8b2d4e4cf.jpg" alt="Welcome page" />
+<img align="right" width="250" src="https://user-images.githubusercontent.com/72120614/147903663-2f5aae98-6ab0-4b80-ba93-164764cac36a.jpg" alt="Second welcome page" />
+<p>
+
+#### DeatailsScreens.
+
+<p align="center">
+<img align="left" width="250" src="Shttps://user-images.githubusercontent.com/72120614/147903788-2d41a615-52bd-4c94-90ff-05da322f7f9f.jpg" alt="Login page" />
+<img align="centre" width="250" src="https://user-images.githubusercontent.com/72120614/147903795-68f12da2-0fbc-4c01-863e-f0b0da33ac57.jpg" alt="Register Page" />
+<img align="right" width="250" src="(https://user-images.githubusercontent.com/72120614/147903812-b07cb21f-71a7-4561-9f9f-7d14e7bcd61f.jpg" alt="Authenticating login" />
+<p>
+
+
+#### Calculator.
+
+<p align="center">
+<img align="left" width="250" src="Shttps://user-images.githubusercontent.com/72120614/147903823-9fc4c923-d297-423f-86e5-3fdbfc9ba040.jpg" alt="Navigation Drawer" />
+<img align="centre" width="250" src="https://user-images.githubusercontent.com/72120614/147903832-c2f19e8b-237e-49ca-9aa4-b66f001d04aa.jpg" alt="Home page" />
+<img align="right" width="250" src="https://user-images.githubusercontent.com/72120614/147903842-1944f929-4b2c-4721-b6f8-1147958fa16c.jpg" alt="Home page 2" />
+<p>
+
+
 
 ## TECHNOLOGIES USED:
 
