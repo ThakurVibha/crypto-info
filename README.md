@@ -99,7 +99,7 @@ Market Cap = Price X Circulating Supply.
 <img align="right" width="250" src="https://user-images.githubusercontent.com/72120614/147903663-2f5aae98-6ab0-4b80-ba93-164764cac36a.jpg" />
 <p>
 
-#### DeatailsScreens.
+#### Deatails Screens.
 
 <p align="center">
 <img align="left" width="250" src="https://user-images.githubusercontent.com/72120614/147903788-2d41a615-52bd-4c94-90ff-05da322f7f9f.jpg"  />
@@ -109,7 +109,7 @@ Market Cap = Price X Circulating Supply.
 <p>
 
 
-#### Calculator.
+#### Web reference and Calculator.
 
 <p align="center">
 <img align="left" width="250" src="https://user-images.githubusercontent.com/72120614/147903823-9fc4c923-d297-423f-86e5-3fdbfc9ba040.jpg" />
