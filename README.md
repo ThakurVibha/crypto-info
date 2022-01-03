@@ -2,7 +2,7 @@
 <p align="center">
 <p>
 
-## CryptoInfo(For code switch to master branch)! :moneybag: :arrow_right: :iphone: 
+# CryptoInfo! :moneybag: :arrow_right: :iphone: 
 
 ## DESCRIPTION
 
@@ -121,21 +121,19 @@ Market Cap = Price X Circulating Supply.
 
 ## TECHNOLOGIES USED:
 
-4. **[Android SDK](https://developer.android.com/studio/)**
+1. **[Android SDK](https://developer.android.com/studio/)**
 
 **For providing all the necessary developer tools to build, test, and debug Android applications on Windows, Mac or Linux.**
 
-5. **[Android Build Tools](https://developer.android.com/studio/releases/build-tools)**
+2. **[Android Build Tools](https://developer.android.com/studio/releases/build-tools)**
 
 **For debugging, building, running and testing an Android applications.**
 
-6. **[Coin Market Cap API](https://coinmarketcap.com/api/documentation/v1/)**
+3. **[Coin Market Cap API](https://coinmarketcap.com/api/documentation/v1/)**
 
 **Coin Market Cap** is a platform which provides fast, reliable and unified data APIs to cryptocurrency markets.
 
-**Coin Market API** was used to get price listings on cryptocurrencies based on trade volume and market capitalization.
-
-For more info about the API check out the API Section below.
+For more info about the API check out the [API](https://coinmarketcap.com/api/documentation/v1/#section/Quick-Start-Guide) Section.
 
 ## LIBRARIES TO NOTE.
 
@@ -161,11 +159,13 @@ For more info about the API check out the API Section below.
   
 - Most importantly, in this architecture, the children don't have the direct reference to the parent, they only have the reference by observables.
   
-## COIN MARKET CAP API
-
-***Coin Market API*** Provides crypto market data endpoints **market price listing based on trade volume and market capitalization**.
-
-For CryptoByte **Gson components were used to parse JSON into Java objects**.
+## [COINMARKETCAP](https://coinmarketcap.com/api/documentation/v1/#tag/cryptocurrency) and [COINPAPRIKA](https://api.coinpaprika.com/v1/coins/btc-bitcoin) API
+  
+***The CoinMarketCap API*** is a suite of high-performance RESTful JSON endpoints that are specifically designed to meet the mission-critical demands of application developers, data scientists, and enterprise business platforms.
+  
+Coinpaprika api is a public api and we do not need any API KEY, we can use it directly.
+  
+For CryptoInfo **Gson components were used to parse JSON into Java objects**.
 
 ***Gson*** is an open source **Java library to serialize and deserialize Java objects to JSON**.
 
