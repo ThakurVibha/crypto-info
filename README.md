@@ -1,12 +1,8 @@
-# crypto-info
 
 <p align="center">
-<img align="centre" width="300" src="Spec.md/Disp1.png" alt="Cryptobyte logo" />
 <p>
 
-# CRYPTOBYTE! :moneybag: :arrow_right: :iphone: 
-
-
+# CryptoInfo! :moneybag: :arrow_right: :iphone: 
 
 ## DESCRIPTION
 
@@ -23,10 +19,5 @@ This Application allows users to view Cryptocurrency prices and monitor their ri
 - For the ***prices user can*** keep track of **Hourly** (1hr), **Daily** (24hr) & **Weekly** (7dy), **Percentage Drop or rise**.
   
 - Calculator to covert and calculate cryptocurries to **USD** in using realtime crypto value.
-
-
-<p align="center">
-<img width="250" src="https://user-images.githubusercontent.com/36197725/49332791-9a8b0f80-f5c4-11e8-86b5-fa2171734d7b.gif" alt="Cryptobyte logo" />
-<p>
 
 
