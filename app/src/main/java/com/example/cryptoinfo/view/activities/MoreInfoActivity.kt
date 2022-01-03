@@ -35,11 +35,11 @@ class MoreInfoActivity : AppCompatActivity(), Onclick {
     private fun onClickItem() {
         ivCancel.setOnClickListener {
             infoDialog.visibility=View.GONE
-            clMoreInfo.visibility=View.VISIBLE
+            rvInfo.visibility=View.VISIBLE
         }
 
         ivWebsite.setOnClickListener {
-            var openWebsiteIntent= Intent(Intent.ACTION_VIEW, Uri.parse("https://anryze.com/"))
+            var openWebsiteIntent= Intent(Intent.ACTION_VIEW, Uri.parse("https://reddit.com/r/bitcoin"))
             startActivity(openWebsiteIntent)
 
         }
@@ -76,6 +76,7 @@ class MoreInfoActivity : AppCompatActivity(), Onclick {
 
     override fun onClick() {
         infoDialog.visibility=View.VISIBLE
+        rvInfo.visibility=View.GONE
 
     }
 

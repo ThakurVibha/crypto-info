@@ -12,7 +12,6 @@ import retrofit2.http.*
 
 var BASE_URL_COINPAPRIKA = "https://api.coinpaprika.com/v1/"
 var BASE_URL_COINMARKETCAP = "https://pro-api.coinmarketcap.com/v1/"
-var API_KEY = "a33fbb95-9591-46b5-899d-cd6815e66d9a"
 
 interface CryptoService {
 

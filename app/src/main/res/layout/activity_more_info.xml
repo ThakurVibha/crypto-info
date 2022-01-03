@@ -14,10 +14,12 @@
         layout="@layout/moreinfo_toolbar_layout" />
 
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="visible"
         tools:listitem="@layout/moreinfo_layout_item"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +33,6 @@
         android:foregroundGravity="center"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarMoreInfo"
         app:srcCompat="@drawable/ic_empty" />
@@ -48,8 +49,15 @@
 
     <include
         android:id="@+id/infoDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:visibility="gone"
         layout="@layout/info_dialog_layout"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rvInfo"
+        app:layout_constraintStart_toStartOf="@+id/rvInfo"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMoreInfo" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

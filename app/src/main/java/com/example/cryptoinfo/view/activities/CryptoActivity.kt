@@ -1,7 +1,5 @@
 package com.example.cryptoinfo.view.activities
 
-import android.content.Intent
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.cryptoinfo.R
