@@ -5,13 +5,13 @@ import com.example.cryptoinfo.model.cryptomarketcap.cryptomarketdetails.CryptoMa
 import com.example.cryptoinfo.model.cryptomarketcap.cryptomarketdetails.Data
 import com.example.cryptoinfo.model.coinpapernika.cryptonames.CryptoName
 import com.example.cryptoinfo.model.cryptomarketcap.dialogurls.Urls
+import com.example.cryptoinfo.model.data.allnews.Article
+import com.example.newssy.data.topheadlines.TopHeadlines
 
 import retrofit2.Call
 import retrofit2.http.*
 
 
-var BASE_URL_COINPAPRIKA = "https://api.coinpaprika.com/v1/"
-var BASE_URL_COINMARKETCAP = "https://pro-api.coinmarketcap.com/v1/"
 
 interface CryptoService {
 
@@ -37,6 +37,12 @@ interface CryptoService {
     //getting url data
     @GET("cryptocurrency/info")
     fun getUrlData(@Query("CMC_PRO_API_KEY") key: String, @Query("id") id: Int): Call<Urls>
+
+    @GET("v2/everything")
+    fun getNews(@Query("q") query: String, @Query("apiKey") api_key: String): Call<Article>
+
+    @GET("v2//everything")
+    fun getTrendingNews(@Query ("q") title: String,@Query ("apiKey") api_key: String):Call<TopHeadlines>
 
 
 }

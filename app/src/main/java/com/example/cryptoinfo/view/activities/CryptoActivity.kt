@@ -5,12 +5,14 @@ import android.os.Bundle
 import com.example.cryptoinfo.R
 import com.example.cryptoinfo.view.fragments.CalculatorFragment
 import com.example.cryptoinfo.view.fragments.CurrencyFragment
+import com.example.cryptoinfo.view.fragments.NewsFragment
 import kotlinx.android.synthetic.main.activity_crypto.*
 
 class CryptoActivity : AppCompatActivity() {
 
     var currencyFragment = CurrencyFragment()
     var calculatorFragment = CalculatorFragment()
+    var newsFragment = NewsFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crypto)
@@ -29,6 +31,10 @@ class CryptoActivity : AppCompatActivity() {
                 R.id.crypto ->
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.container, currencyFragment).commit()
+
+                R.id.news ->
+                    supportFragmentManager.beginTransaction().replace(R.id.container, newsFragment)
+                        .commit()
             }
             true
         }

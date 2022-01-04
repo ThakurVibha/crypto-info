@@ -7,6 +7,8 @@ import com.example.cryptoinfo.model.coinpapernika.cryptodetails.CryptoDeatils
 import com.example.cryptoinfo.model.cryptomarketcap.cryptomarketdetails.CryptoMarketDetails
 import com.example.cryptoinfo.model.coinpapernika.cryptonames.CryptoName
 import com.example.cryptoinfo.repository.CryptoRepository
+import com.example.cryptoinfo.model.data.allnews.Article
+import com.example.newssy.data.topheadlines.TopHeadlines
 
 class CryptoViewModel(application: Application) : AndroidViewModel(application) {
     var cryptoRepository = CryptoRepository(application)
@@ -63,6 +65,26 @@ class CryptoViewModel(application: Application) : AndroidViewModel(application) 
 //    }
 //
 
+//News
 
 
+    fun fetchNewsData(userInput: String) {
+        cryptoRepository.fetchNewsData(userInput)
+    }
+
+    fun successNewsData(): MutableLiveData<Article>{
+        return cryptoRepository.mSuccessNewsData
+    }
+
+    fun failureData():MutableLiveData<String>{
+        return cryptoRepository.mFailureData
+    }
+
+    fun fetchTopHeadlines() {
+        cryptoRepository.fetchTopHeadlinesData()
+    }
+
+    fun successHeadlinesData():MutableLiveData<TopHeadlines>{
+        return cryptoRepository.mSuccessHeadLines
+    }
 }

@@ -9,10 +9,15 @@ import android.view.View
 import com.google.android.material.snackbar.Snackbar
 
 
-var connectivity: ConnectivityManager? = null
-var info: NetworkInfo? = null
 
 object Constants {
+    var CRYPTO_API_KEY="e8fff1ed-f894-492a-9ff5-dfbb35814798"
+    var connectivity: ConnectivityManager? = null
+    var info: NetworkInfo? = null
+    var BASE_URL_COINPAPRIKA = "https://api.coinpaprika.com/v1/"
+    var BASE_URL_COINMARKETCAP = "https://pro-api.coinmarketcap.com/v1/"
+    const val BASE_URL_NEWS = "https://newsapi.org/"
+    const val NEWS_API_KEY = "b4a158ac361840a3ad16696458084fc1"
 
     fun showSnackBar(view: View) {
         val snackbar = Snackbar.make(
